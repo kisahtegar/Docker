@@ -36,11 +36,14 @@ CMD command param param
 CMD ["executable", "param", "param"]
 CMD ["param", "param"] # akan menggunakan ENTRY POINT
 
+#--------------------------------------------------------------------
 FROM alpine:3
+
 RUN mkdir hello
 RUN echo "Hello World" > hello/world.txt
 
 CMD cat "hello/world.txt"
+#--------------------------------------------------------------------
 
 # docker image
 docker build -t kisahtegar/command command
@@ -50,3 +53,22 @@ docker image inspect kisahtegar/command
 docker container create --name command kisahtegar/command
 docker container start command
 docker container logs command
+
+# [LABEL instruction]
+LABEL <key>=<value>
+LABEL <key1>=<value1> <key2>=<value2> ...
+
+FROM alpine:3
+
+LABEL author="Kisah Tegar Putra Abdi"
+LABEL company="KisahCode" website="https://kisahcode.web.app"
+
+RUN mkdir hello
+RUN echo "Hello World" > "hello/world.txt"
+
+CMD cat "hello/world.txt"
+
+docker build -t kisahtegar/label label
+docker image inspect kisahtegar/label
+#--------------------------------------------------------------------
+
