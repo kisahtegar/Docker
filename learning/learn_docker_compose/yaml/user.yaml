@@ -1,0 +1,55 @@
+# This what yaml looks like
+
+firstName: Kisah
+middleName: Tegar
+lastName: Abdi
+
+# Yaml Array
+hobbies:
+  - Coding
+  - Reading
+  - Gaming
+
+# Yaml Nested Object
+address:
+  street: JL. Cempaka 3
+  city: Tangerang
+  country: Arab
+
+# Yaml Array Nested Object
+wallet:
+  - type: cash
+    amount: 100000
+  - type: debit
+    amount: 500000
+
+#==================================================
+# This what json looks like
+
+# {
+#   "firstName": "Kisah",
+#   "middleName": "Tegar",
+#   "lastName": "Abdi",
+#   "hobbies": [
+#     "Coding",
+#     "Reading",
+#     "Gaming"
+#   ],
+#   "address": {
+#     "street": "JL. Cempaka 3",
+#     "city": "Tangerang",
+#     "country": "Arab"
+#   },
+#   "wallet": [
+#     {
+#       "type": "cash",
+#       "amount": 100000
+#     },
+#     {
+#       "type": "debit",
+#       "amount": 500000
+#     }
+#   ]
+# }
+
+# Convert your json to yaml: https://www.json2yaml.com
