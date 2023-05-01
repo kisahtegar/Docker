@@ -1,8 +1,16 @@
-# Showing docker image ls
+#========================================================================
+# [Showing docker image ls]
+
 docker image ls
 
-# Pull image
+#========================================================================
+# [Pull image]
+
 docker image pull redis:latest
 
-# Removing image
+#========================================================================
+# [Removing image]
+
 docker image rm redis:latest
+
+#========================================================================
